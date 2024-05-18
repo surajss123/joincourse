@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sedan+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(207, 159, 255,0.6);
+}
+.navbar{
+    height: 75px;
+    width: 100%;
+    margin: auto;
+}
+.icon{
+    width: 400px;
+    float: left;
+    height: 75px;
+}
+.logo{
+    color: rgb(233, 21, 21);
+    font-size: 45px;
+    font-weight: 700;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-family: "Sedan SC", serif;
+    float: left;
+    text-shadow: 2px 2px white;
+}
+.menu{
+    height: 75px;
+    float: right;
+    display: flex;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 30px;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in;
+
+}
+.menu li a:hover{
+    color: red;
+  
+}
+.menu .search{
+    height: 30px;
+    margin: auto 20px;
+ 
+}
+
+.menu .srch{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding-left:10px ;
+    background: transparent;
+    font-size: 15px;
+    
+}
+.menu .srch:focus{
+    outline: none;
+
+}
+.menu .btn{
+    height: 100%;
+    border: 1px solid orangered;
+    color: white;
+    background-color: orangered;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.menu .btn:focus{
+    outline: none;
+}
+.wrapper{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+}
+.wrapper .condact{
+    width: 40%;
+}
+.wrapper .condact-info{
+    width: 60%;
+
+}
+.condact h1{
+    text-align: center;
+    margin-top: 50px;
+    color: brown;
+    margin-bottom: 70px;
+    font-size: 55px;
+}
+.condact .icon.icon1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 70px;
+}
+.condact .icon i{
+    margin-right: 40px;
+    font-size: 30px;
+}
+.condact .icon span{
+    font-size: 15px;
+}
+.condact .icon.icon2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 70px;
+}
+.condact .icon.icon3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 70px;
+}
+.condact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.condact-info h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+
+}
+.condact-info p{
+    float: left;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.condact-info input{
+    height: 60px;
+    width: 600px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.condact-info button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    float: right;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+::placeholder{
+    font-size: 20px;
+    padding-left: 15px;
+}
+.condact-info button:hover{
+    color: white;
+    background-color: black;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.footer img{
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-info{
+    position: absolute;
+    top: 100px;
+    margin-left: 100px;   
+    margin-right: 100px;
+    text-align: center;  
+}
+.footer .footer-info h2{
+    font-size: 40px;
+    color: white;
+
+}
+.footer .footer-info p{
+    font-size: 20px;
+    color: darkgoldenrod;
+    padding: 15px;
+}

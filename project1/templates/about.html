@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "style22.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LeArN TecH</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'signin' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+                <li><a href="{% url 'course' %}">COURSES</a></li>
+                <li><a href="{% url 'condact' %}">CONTACT</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="srch" placeholder="Type To Text" name="">
+                <a href=""><button class="btn">Search</button></a>       
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        
+        <div class="content-info">
+            <h2>LeArN TecH</h2>
+            <h4>No.1 Web Development Training Institute in Kerala</h4>
+            <p>Our professional trainers with years of industry experience helps you get trained &placed in the field of Web devolopment.</p>
+        </div>
+        <img src='{% static "images/pic_1.png" %}' alt="">
+    </div>
+    <div class="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img class="circular--square" src='{% static "images/pic_2.jpg" %}' />
+            <h3>Sandeep P S</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img class="circular--square" src='{% static "images/pic_3.jpg" %}' />
+            <h3>Ranbeer Singh</h3>
+            <p>Master in Web development</p>
+        </div>
+        <div class="team-member"><img class="circular--square" src='{% static "images/pic_4.jpg" %}' />
+            <h3>Sabir Kumar</h3>
+            <p>Proffessor in Web development</p></div>
+        <div class="team-member"><img class="circular--square" src='{% static "images/pic_5.jpg" %}' />
+            <h3>Sharukh</h3>
+            <p>Proffessor in Web Development</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='{% static "style4.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LeArN TecH</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'signin' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+                <li><a href="{% url 'course' %}">COURSES</a></li>
+                <li><a href="{% url 'condact' %}">CONTACT</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="srch" placeholder="Type To Text" name="">
+                <a href=""><button class="btn">Search</button></a>       
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="condact">
+            <h1>Condact Us</h1>
+            <div class="icon icon1">
+                <i class="fa fa-phone"></i>
+                <h3>Call us On <br><span>Call: +91 **********</span></h3>
+                
+            </div>
+            <div class="icon icon2">
+                <i class="fa fa-envelope"></i>
+                <h3>Email us at: <br><span>Enquiry: contact@learntech.com</span></h3>
+             
+            </div>
+            <div class="icon icon3">
+                <i class="fa fa-whatsapp"></i>
+                <h3>Connect us on: <br><span>WhatsApp</span></h3>
+                
+            </div>
+        </div>
+        <div class="condact-info">
+            <h3>How can we be of assistance? </h3>
+            <p>If you require clarifications on any of the courses or the admission process,<br> we are happy to help</p>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" placeholder="Name" name="name" required><br>
+                <input type="number" placeholder="Condact Number" name="condact_number" required><br>
+                <input type="email" placeholder="Email id" name="email" required><br>
+                <input type="text" placeholder="City" name="city" required><br>
+                <input list="course_list" placeholder="Please Select Course" name="courses" required>
+                <datalist id="course_list">
+                    <option value="MEA(R)N Stack Web Development Expert - Angular & React"></option>
+                    <option value="Python Django - Angular- Full Stack Web Development Expert"></option>
+                </datalist><br>
+                <button>Submit</button>
+                    
+                 
+
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <img src='{% static "images/condact.png" %}' alt="">
+        <div class="footer-info">
+            <h2>So why wait? Start one of our high quality courses from the world's leading experts today!</h2>
+            <p>If You Have Any Questions Call Us / Whatsapp On +91 **********</p>
+        </div>
+    </div>
+    
+</body>
+</html>

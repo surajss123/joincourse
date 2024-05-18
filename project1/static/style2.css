@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    position: relative;
+}
+.signUpBox{
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+
+    
+}
+.wrapper img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
+}
+.signUpBox h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.signUpBox .user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user label{
+    font-size: 20px;
+    margin-top: 15px;
+    color: blue;
+
+}
+.user input{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(240, 235, 235, 0.795);
+}
+.user i{
+    position: absolute;
+    bottom: 365px;
+    right: 50px;
+}
+.signUpBox .email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email label{
+    font-size: 20px;
+    margin-top: 15px;
+    color: blue;
+
+}
+.email input{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(240, 235, 235, 0.795);
+
+}
+.email i{
+    position: absolute;
+    bottom: 276px;
+    right: 50px;
+}
+.signUpBox .pass{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pass label{
+    font-size: 20px;
+    margin-top: 15px;
+    color: blue;
+}
+.pass input{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(240, 235, 235, 0.795);
+}
+.pass i{
+    position: absolute;
+    bottom: 185px;
+    right: 54px;
+}
+.signUpBox .conf_pass{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conf_pass label{
+    font-size: 20px;
+    margin-top: 15px;
+    color: blue;
+    
+}
+.conf_pass input{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(240, 235, 235, 0.795);
+}
+.conf_pass i{
+    position: absolute;
+    bottom: 99px;
+    right: 54px;
+}
+.signUpBox button{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(211, 28, 28);
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: white;
+
+}
+.signUpBox button:hover{
+    background-color: rgb(22, 19, 199)
+}
+
+::placeholder{
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
+}
+.signUpBox p{
+    background-color: white;
+    z-index: 2;
+    color: rgb(34, 31, 31);
+}

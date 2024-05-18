@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "style3.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LeArN TecH</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'signin' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+                <li><a href="{% url 'course' %}">COURSES</a></li>
+                <li><a href="{% url 'condact' %}">CONTACT</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="srch" placeholder="Type To Text" name="">
+                <a href=""><button class="btn">Search</button></a>       
+            </div>
+        </div>
+    </div>
+    <div class="course">
+        <h1>Our 100% Job Oriented <br>Training Programs</h1>
+        <div class="course-info">
+            <div class="course-list">
+                <h2>MEA(R)N Stack Web Development<br> Expert - Angular & React</h2>
+                <p>HTML, CSS, Bootstrap, Javascript, Typescript, Git, Angular, React.js, Node.js, Express.js & MongoDB</p>
+                <p><span>Next Batch:</span><br>
+                    <span>Kannur :</span> May 15th 2024 (Offline & Online)<br>
+                    <span>Calicut :</span> May 15th 2024 (Offline)<br>
+                    <span>Duration:</span><br>
+                    6 Months, 5 Days a Week, 1.5-2 Hours/day<br>
+                    <span>Course Fee:</span><br>
+                    <span>Fees (EMI Mode) :</span> 25000<br>
+                    <span>Fees (One time Payment mode) :</span> 21500</p>
+            </div>
+            <div class="course-list">
+                <h2>Python Django -<br> Angular- Full Stack Web<br> Development Expert</h2>
+                <p>Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST API, Git, Angular, Web</p>
+                <p><span>Next Batch:</span><br>
+                    <span>Kannur :</span> May 15th 2024<br>
+                    <span>Calicut :</span> May 15th 2024 (Offline)<br>
+                    <span>Duration:</span><br>
+                    6 Months, 5 Days a Week, 1.5-2 Hours/day<br>
+                    <span>Course Fee:</span><br>
+                    <span>Fees (EMI Mode) :</span> 15000<br>
+                    <span>Fees (One time Payment mode) :</span> 11500</p>
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

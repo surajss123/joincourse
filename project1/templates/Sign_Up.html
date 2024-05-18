@@ -1,0 +1,62 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='{% static "style2.css" %}'>
+</head>
+<body>
+    <div class="wrapper">
+        <img src='{% static "images/bg-img2.jpg" %}' alt="">
+        
+        {% for message in messages %}
+        {% if message.tags == "error" %}
+        <div class="alert alert-danger" role="alert" style="background-color: red; height: 25px; color: white; font-size: 15px; text-align: center;">
+            {{ message }}
+        </div>
+        {% else %}
+        <div class="alert alert-success" role="alert" style="background-color: red; height: 25px; color: white; font-size: 15px; text-align: center;">
+            {{message}}
+        </div>
+        {% endif %}
+        {% endfor %}
+        <div class="signUpBox">
+            <h2>Sign Up</h2>
+            <form action="{% url 'signup' %}" method="POST">
+                {% csrf_token %}
+                <div class="user">
+                    <label>Username</label><br>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <i class="fa fa-user-plus"></i>
+                </div>
+                <div class="email">
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="pass">
+                    <label>Password</label><br>
+                    <input type="password" placeholder="password" name="password" required>
+                    <i class="fa fa-unlock-alt"></i>
+                </div>
+                <div class="conf_pass">
+                    <label>Confirm_Password</label><br>
+                    <input type="password" placeholder="password" name="conf-password" required>
+                    <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <button>Sign Up</button>
+        
+
+            </form>
+           
+
+        </div>
+        
+    </div>
+</body>
+</html>
